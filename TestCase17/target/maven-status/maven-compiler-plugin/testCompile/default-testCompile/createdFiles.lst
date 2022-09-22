@@ -1,0 +1,5 @@
+tests/CartPageDisplayedTest.class
+stepDefinations/RemoveProducts.class
+tests/BaseTest.class
+tests/ProductIsRemovedTest.class
+tests/HomePageVisibleTest.class

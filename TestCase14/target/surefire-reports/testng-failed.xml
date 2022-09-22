@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="tests.VerifyAddressTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyingAddress"/>
+          <include name="setup"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- tests.VerifyAddressTest -->
+      <class name="tests.HomePageVisibleTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="isHomePageVisible"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- tests.HomePageVisibleTest -->
+      <class name="tests.CartPageDisplayedTest">
+        <methods>
+          <include name="testingCartPageDisplayed"/>
+          <include name="set"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CartPageDisplayedTest -->
+      <class name="tests.LoggedAsTest">
+        <methods>
+          <include name="loggedAsVisibleTest"/>
+          <include name="set"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoggedAsTest -->
+      <class name="tests.AccountCreatedTest">
+        <methods>
+          <include name="set"/>
+          <include name="isAccountCreated"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AccountCreatedTest -->
+      <class name="tests.OrderIsSuccessfullMessageTest">
+        <methods>
+          <include name="set"/>
+          <include name="verifyingAddress"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.OrderIsSuccessfullMessageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

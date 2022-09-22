@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 13.532 sec <<< FAILURE!
+isAccountCreated(tests.AccountCreatedTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.HomePage.clickOnProducts(HomePage.java:18)
+	at tests.AccountCreatedTest.isAccountCreated(AccountCreatedTest.java:25)
+
+loggedAsVisibleTest(tests.LoggedAsTest)  Time elapsed: 8.314 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=105.0.5195.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.88', ip: 'fe80:0:0:0:ce0:f8b9:2059:e4ce%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/vv/s2rmw5rd0bg...}, goog:chromeOptions: {debuggerAddress: localhost:49460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b831a8c8dc6d240fd92c28f65252f43
+*** Element info: {Using=id, value=id_gender2}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.EnterAccountInformationPage.elementFinder(EnterAccountInformationPage.java:34)
+	at pages.EnterAccountInformationPage.enteringFields(EnterAccountInformationPage.java:38)
+	at tests.LoggedAsTest.loggedAsVisibleTest(LoggedAsTest.java:37)
+
+verifyingAddress(tests.OrderIsSuccessfullMessageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.HomePage.clickOnProducts(HomePage.java:18)
+	at tests.OrderIsSuccessfullMessageTest.verifyingAddress(OrderIsSuccessfullMessageTest.java:30)
+
+testingCartPageDisplayed(tests.CartPageDisplayedTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.HomePage.clickOnProducts(HomePage.java:18)
+	at tests.CartPageDisplayedTest.testingCartPageDisplayed(CartPageDisplayedTest.java:20)
+
+verifyingAddress(tests.VerifyAddressTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.HomePage.clickOnProducts(HomePage.java:18)
+	at tests.VerifyAddressTest.verifyingAddress(VerifyAddressTest.java:28)
+
+isHomePageVisible(tests.HomePageVisibleTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+	at pages.HomePage.getHomePageName(HomePage.java:13)
+	at tests.HomePageVisibleTest.isHomePageVisible(HomePageVisibleTest.java:17)
+

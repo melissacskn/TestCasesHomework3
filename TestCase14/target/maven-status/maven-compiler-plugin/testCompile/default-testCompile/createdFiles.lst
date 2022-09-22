@@ -1,0 +1,8 @@
+tests/LoggedAsTest.class
+stepDefinations/RegisterWhileCheckout.class
+tests/CartPageDisplayedTest.class
+tests/OrderIsSuccessfullMessageTest.class
+tests/BaseTest.class
+tests/AccountCreatedTest.class
+tests/VerifyAddressTest.class
+tests/HomePageVisibleTest.class
